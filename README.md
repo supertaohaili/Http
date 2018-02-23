@@ -11,7 +11,7 @@ allprojects {
 }
 
 dependencies {
-         compile 'com.github.supertaohaili:OkGo:1.0.0'
+         compile 'com.github.supertaohaili:Http:1.0.0'
 }
 
 ```
