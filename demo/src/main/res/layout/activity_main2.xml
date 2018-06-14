@@ -1,9 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.lzy.demo.shanshiyu.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/cookies"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:hint="账号"
+            android:paddingLeft="10dp"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:hint="点赞数,默认10"
+            android:inputType="numberDecimal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:hint="密码"
+            android:paddingLeft="10dp"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/run"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="@drawable/comm_btn_selector"
+            android:gravity="center"
+            android:text="开启点赞"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="13sp" />
+    </ScrollView>
 
 </LinearLayout>

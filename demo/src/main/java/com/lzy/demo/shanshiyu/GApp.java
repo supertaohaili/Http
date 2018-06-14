@@ -35,19 +35,19 @@ public class GApp extends Application {
 
     private void initOkGo() {
         HttpHeaders headers = new HttpHeaders();
-        headers.put("Device", DeviceUtils.getModel());
-        // 设备唯一标识
-        headers.put("DeviceIdentifier", PhoneUtils.getIMEI());
-        // 系统版本号
-        headers.put("OsVersion", DeviceUtils.getSDKVersion()+"");
-        // 应用版本号
-        headers.put("AppVersion", AppUtils.getAppVersionName()+"");
-        // 客户端类型
-        headers.put("clienttype", "3");
-
-        headers.put("resource", "android");
-        // 渠道
-        headers.put("Channel", getChannel());
+//        headers.put("Device", DeviceUtils.getModel());
+//        // 设备唯一标识
+//        headers.put("DeviceIdentifier", PhoneUtils.getIMEI());
+//        // 系统版本号
+//        headers.put("OsVersion", DeviceUtils.getSDKVersion()+"");
+//        // 应用版本号
+//        headers.put("AppVersion", AppUtils.getAppVersionName()+"");
+//        // 客户端类型
+//        headers.put("clienttype", "3");
+//
+//        headers.put("resource", "android");
+//        // 渠道
+//        headers.put("Channel", getChannel());
 
         HttpParams params = new HttpParams();
 //        params.put("commonParamsKey1", "commonParamsValue1");     //param支持中文,直接传,不要自己编码
